@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <div class="caja">
+            <h1><img src="img/img-removebg-preview.png" alt="Logo del restaurante" id="logo"></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contactos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="cuerpo">
+        <form>
+            <label for="nombreapellido">Nombre y Apellido</label>
+            <input type="text" id="nombreapellido" class="input_padron" required>
+
+            <label for="correoelec">Correo Electrónico</label>
+            <input type="email" id="correoelec" class="input_padron" required placeholder="email@dominio.com">
+
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" class="input_padron" required placeholder="(XX) XXXX-XXXX">
+
+            <label for="mensaje">Mensaje</label>
+            <textarea name="" id="mensaje" cols="70" rows="10" class="input_padron" required></textarea>
+
+            <fieldset>
+                <legend>¿Cómo le gustaría que le contactemos?</legend>
+
+                <label for="radio_email"><input type="radio" name="contacto" value="email" id="radio_email">Email</label>
+
+                <label for="radio_telefono"><input type="radio" name="contacto" value="telefono" id="radio_telefono">Teléfono</label>
+
+                <label for="radio_whatsapp"><input type="radio" name="contacto"  value="whatsapp" id="radio_whatsapp" checked>Whatsapp</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>¿En cúal horario prefiere ser atendido?</legend>
+                <select>
+                    <option>Mañana</option>
+                    <option>Tarde</option>
+                    <option>Noche</option>
+                </select>
+            </fieldset>
+
+            <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades del Restaurante de Isabel?</label>
+
+            <input type="submit" value="Enviar formulario" class="enviar">
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Día</th>
+                    <th>Horario</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Semana</td>
+                <td>08h ~ 20h</td>
+            </tr>
+            <tr>
+                <td>Sabádo</td>
+                <td>08h ~ 16h</td>
+            </tr>
+            <tr>
+                <td>Festivos</td>
+                <td>09h ~ 13h</td>
+            </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <img src="img/img.png" alt="Logo del restaurant">
+        <p class="copy">&copy Copyright Restaurante Isabel - 2023</p>
+    </footer>
+</body>
+</html>
